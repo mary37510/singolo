@@ -1,0 +1,189 @@
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    height: 95px;
+    background-color: #2d303a;
+    padding: 34px 40px 35px 40px;
+    border-bottom: #323746 6px solid;
+}
+
+.header .header__logo {
+    width: 115px;
+    height: 20px;
+    color: #ffffff;
+    font-family: Lato;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header .header__logo .star {
+    color: #f06c64;
+}
+
+.header .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 371px;
+    margin-left: 609px;
+    line-height: 6.32px;
+    margin-top: -15px;
+}
+
+.header .menu .menu_link {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 6px;
+    font-weight: 700;
+    text-align: left;
+    color: #f2f2f2;
+    cursor: pointer;
+
+}
+
+.header .menu .menu_link:hover {
+    color: #f06c64;
+}
+
+li+li::before {
+    content: ".";
+    position: relative;
+    bottom: 3px;
+    left: -16px;
+    font-weight: 400;
+    color: #494e62;
+}
+
+.menu .menu_item {
+    list-style-type: none;
+}
+
+.slaider {
+    height: 600px;
+    background-color: #f06c64;
+    padding: 53px 40px 58px 42px;
+    border-bottom: #ea676b 15px solid;
+}
+
+.slaider .slaider_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding-left: 112px;
+}
+
+.slaider .slider_img {
+    width: 100%;
+}
+
+#horizontal_phone {
+    margin-left: 73px;
+}
+
+.slaider .slaider_chev {
+    position: absolute;
+    margin-top: 228px;
+    margin-left: 43px;
+    background: url('assets/chev.png');
+    width: 16px;
+    height: 27px;
+    cursor: pointer;
+    border: none;
+    z-index: 2;
+}
+
+.slaider .chev_rigth {
+    transform: scale(-1, 1);
+    margin-left: 964px;
+}
+
+.services {
+    height: 496px;
+    background-color: #f2f2f2;
+    border-bottom: #ffffff 6px solid;
+    padding-top: 67px;
+    padding-left: 40px;
+    padding-right: 41px;
+}
+
+.services .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 938px;
+    height: 209px;
+}
+
+.services .row .col-4 {
+    width: 33.33%;
+}
+
+.services .services_name {
+    color: #666d89;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 17.86px;
+}
+
+.services .services_subheader {
+    margin-top: 33px;
+    color: #767e9e;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.services .services_block {
+    margin-top: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.services .services_block .services_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 59px;
+    height: 59px;
+    border: 2px solid #666d89;
+    border-radius: 100%;
+}
+
+.services .services_block .services_descr {
+    width: 220px;
+    height: 86px;
+}
+
+.services .services_block .services_descr .services_subtitle {
+    color: #666d89;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17.86px;
+}
+
+.services .services_block .services_descr .services_text {
+    margin-top: 15px;
+    color: #767e9e;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+    height: 100%;
+    overflow: hidden;
+}
