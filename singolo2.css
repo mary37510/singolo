@@ -1,0 +1,144 @@
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.portfolio {
+    height: 876px;
+    background-color: #2d303a;
+    border-bottom: #323746 6px solid;
+}
+
+.portfolio .portfolio_tittle, .about .about_tittle {
+    padding-top: 67px;
+    padding-left: 41px;
+    color: #666d89;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.about .about_tittle {
+    padding-top: 59px;
+}
+
+.portfolio .portfolio_subtittle, .about .about_subtittle {
+    padding-top: 23px;
+    color: #767e9e;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 41px;
+    padding-right: 40px;
+}
+
+.about .about_subtittle {
+    line-height: 30px;
+}
+
+.portfolio .portfolio_nav{
+    padding-left: 41px;
+}
+
+.portfolio .portfolio_btn {
+    border: 1px solid #666d89;
+    border-radius: 10%;
+    background: none;
+    margin-top: 15px;
+    margin-right: 6px;
+    cursor: pointer;
+    color: #767e9e;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px 6px;
+}
+
+.portfolio .portfolio_btn:hover {
+    border: 1px solid #c5c5c5;
+    color: #dedede;
+}
+
+.portfolio .images_block{
+    padding-top: 3px;
+}
+
+.portfolio .row {
+    max-height: 620px;
+    overflow: hidden;
+    padding-left: 40px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio .row .col-3 {
+    width: 25%;
+    margin-top: 17px;
+}
+
+.about {
+    height: 728px;
+    background-color: #f2f2f2;
+    border-bottom: #ffffff 6px solid;
+}    
+
+.about .persons_block {
+    padding-left: 40px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 44px; 
+}
+
+.about .person_card {
+    width: 33.33%;
+}
+
+.person_name {
+    padding-top: 11px;
+    color: #666d89;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.person_descr {
+    margin-top: 10px;
+    color: #767e9e;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+}
+
+.person_social {
+    margin-top: 24px;
+    width: 152px;
+	display: flex;
+    justify-content: space-between;
+}
+
+.person_social .person_social_item {
+    border: 1px solid #666d89;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+
+.person_social_item:hover {
+    background-color: white;
+}
+
