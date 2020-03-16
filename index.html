@@ -9,35 +9,51 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
-    <header class="header">
+<body id="body">
+    <header class="header" id="home">
         <nav>
             <div class="container">
                 <a href="#" class="header__logo">
                     <h1><img src="assets/SINGOLO.png" alt="logo"></h1>
                 </a>
-                <ul class="menu">
-                    <li class="menu_item"><a href="#" class="menu_link">home</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">services</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">portfolio</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">about</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">contact</a></li>
+                <ul class="menu" id="menu">
+                    <li class="menu_item"><a href="#home" class="menu_link active">home</a></li>
+                    <li class="menu_item"><a href="#Our-services" class="menu_link">services</a></li>
+                    <li class="menu_item"><a href="#portfolio" class="menu_link">portfolio</a></li>
+                    <li class="menu_item"><a href="#about-us" class="menu_link">about</a></li>
+                    <li class="menu_item"><a href="#get-guote" class="menu_link">contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <section class="slaider">
         <div class="container">
-            <button class="slaider_chev chev_left"></button>
-            <div class="slaider_wrapper">
-                <img src="assets/iPhone_Vertical.png" alt="vertical iPhone" class="slaider_img">
-                <img src="assets/iPhone_Horizontal.png" alt="horizontal iPhone" class="slaider_img"
-                    id="horizontal_phone">
+
+            <div class="slaider_wrapper" id="slaider">
+                <div class="slaider_item">
+                    <div class="screen" id="phone">
+                        <img src="assets/iPhone_Vertical.png" alt="vertical iPhone" class="slaider_img">
+                        <img src="assets/Screen_Vertical.png" alt="Screen Vertical"
+                            class="iphone_screen hidden screen_vertical">
+                        <img src="assets/iPhone_Horizontal.png" alt="horizontal iPhone" class="slaider_img"
+                            id="horizontal_phone">
+                        <img src="assets/Screen_Horizontal.png" alt="Screen Horizontal"
+                            class="iphone_screen hidden screen_horizontal">
+                    </div>
+                    <div class="iPhone_shadow">
+                        <img src="assets/Vertical_Shadow.png" alt="shadow" class="vertical_shadow">
+                        <img src="assets/Horizontal_Shadow.png" alt="shadow" class="horizontal_shadow">
+                    </div>
+                </div>
+                <div class="slaider_item second">
+                    <img src="assets/telefon.svg" class="slaider_img">
+                </div>
             </div>
-            <button class="slaider_chev chev_rigth"></button>
+            <button class="slaider_chev chev_left" onclick="plusSlides(-1)"></button>
+            <button class="slaider_chev chev_rigth" onclick="plusSlides(1)"></button>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="Our-services">
         <div class="container">
             <h2 class="services_name">
                 Our Services
@@ -140,61 +156,61 @@
                 </div>
             </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="portfolio_tittle">Portfolio</h2>
             <p class="portfolio_subtittle">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
                 odio sem nec elit.</p>
-            <div class="portfolio_nav">
+            <div class="portfolio_nav" id="portfolio_nav">
                 <button class="portfolio_btn">All</button>
                 <button class="portfolio_btn">Web Design</button>
                 <button class="portfolio_btn">Graphic Design</button>
                 <button class="portfolio_btn">Artwork</button>
             </div>
-            <div class="images_block">
-                <div class="row">
+            <div class="images_block" id="portfolio_img">
+                <div class="row" id="something">
                     <div class="col-3">
-                        <img src="assets/port_1.png" alt="portfolio_img">
+                        <img class="portfolio_work" src="assets/port_1.png" alt="portfolio_img">
                     </div>
                     <div class="col-3">
-                        <img src="assets/port_2.png" alt="portfolio_img">
+                        <img class="portfolio_work" src="assets/port_2.png" alt="portfolio_img">
                     </div>
                     <div class="col-3">
-                        <img src="assets/port_3.png" alt="portfolio_img">
+                        <img class="portfolio_work" src="assets/port_3.png" alt="portfolio_img">
                     </div>
                     <div class="col-3">
-                        <img src="assets/port_4.png" alt="portfolio_img">
+                        <img class="portfolio_work" src="assets/port_4.png" alt="portfolio_img">
                     </div>
                     <div class="col-3">
-                        <img src="assets/port_5.png" alt="portfolio_img">
+                        <img class="portfolio_work" src="assets/port_5.png" alt="portfolio_img">
                     </div>
                     <div class="col-3">
-                        <img src="assets/port_6.png" alt="portfolio_img">
+                        <img class="portfolio_work" src="assets/port_6.png" alt="portfolio_img">
                     </div>
                     <div class="col-3">
-                        <img src="assets/port_7.png" alt="portfolio_img">
+                        <img class="portfolio_work" src="assets/port_7.png" alt="portfolio_img">
                     </div>
                     <div class="col-3">
-                        <img src="assets/port_8.png" alt="portfolio_img">
+                        <img class="portfolio_work" src="assets/port_8.png" alt="portfolio_img">
                     </div>
                     <div class="col-3">
-                        <img src="assets/port_9.png" alt="portfolio_img">
+                        <img class="portfolio_work" src="assets/port_9.png" alt="portfolio_img">
                     </div>
                     <div class="col-3">
-                        <img src="assets/port_10.png" alt="portfolio_img">
+                        <img class="portfolio_work" src="assets/port_10.png" alt="portfolio_img">
                     </div>
                     <div class="col-3">
-                        <img src="assets/port_11.png" alt="portfolio_img">
+                        <img class="portfolio_work" src="assets/port_11.png" alt="portfolio_img">
                     </div>
                     <div class="col-3">
-                        <img src="assets/port_12.png" alt="portfolio_img">
+                        <img class="portfolio_work" src="assets/port_12.png" alt="portfolio_img">
                     </div>
                 </div>
             </div>
         </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about-us">
         <div class="container">
             <h2 class="about_tittle">About Us</h2>
             <p class="about_subtittle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
@@ -264,7 +280,7 @@
             </div>
         </div>
     </section>
-    <section class='get_a_quote'>
+    <section class='get_a_quote' id="get-guote">
         <div class="container">
             <h2 class="get_a_quote_tittle">Get a Quote</h2>
             <p class="get_a_quote_subtittle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
@@ -273,11 +289,20 @@
             <div class="anket">
                 <div class="forms">
                     <form class="get_a_quote_form" action="#">
-                        <input name="name" required placeholder="Name" type="text">
-                        <input name="email" required placeholder="Email" type="email">
-                        <input name="Subject" placeholder="Subject" type="text">
-                        <textarea name="describe" placeholder="Describe your project in detail..."></textarea>
-                        <input type="submit" value="Submit info" class="submit_btn">
+                        <input id="name" name="name" required placeholder="Name" type="text">
+                        <input id="email" name="email" required placeholder="Email" type="email">
+                        <input id="subject" name="Subject" placeholder="Subject" type="text">
+                        <textarea id="project" name="describe"
+                            placeholder="Describe your project in detail..."></textarea>
+                        <input type="submit" value="Submit info" class="submit_btn" id="btn">
+                        <div id="message-block" class="hidden">
+                            <div id="message" class="hidden">
+                                <p><span class="messages" id="result1"></span></p>
+                                <p><span class="messages" id="result2"></span></p>
+                                <p><span class="messages" id="result3"></span></p>
+                                <button class="message-block-btn" id="close-btn">OK</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
                 <div class="contact_info">
@@ -319,6 +344,7 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

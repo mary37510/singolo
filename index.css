@@ -9,6 +9,16 @@ a {
     text-decoration: none;
 }
 
+button,
+button:active,
+button:focus,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+    outline: none;
+}
+
 .container {
     width: 1020px;
     margin: 0 auto;
@@ -51,8 +61,12 @@ a {
 
 }
 
-.header .menu .menu_link:hover {
+.header .menu .menu_link.active {
     color: #f06c64;
+}
+
+.header .menu .menu_link:hover:not(.active):hover {
+    color: #000000;
 }
 
 li+li::before {
@@ -75,20 +89,39 @@ li+li::before {
     border-bottom: #ea676b 15px solid;
 }
 
-.slaider .slaider_wrapper {
+.slaider .slaider_item.second {
+    width: 100%;
+    padding-left: 252px;
+    background-color:  #648BF0;
+}
+
+.slaider .slaider_item {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     padding-left: 112px;
+    z-index: 3;
 }
 
-.slaider .slider_img {
-    width: 100%;
+.slaider .slaider_img {
+    cursor: pointer;
 }
 
 #horizontal_phone {
     margin-left: 73px;
+    margin-bottom: 130px;
+}
+
+.iPhone_shadow {
+    margin-top: -461px;
+    position: relative;
+    z-index: -1;
+}
+
+.iPhone_shadow .horizontal_shadow {
+    margin-bottom: 130px;
+    margin-left: 48px;
 }
 
 .slaider .slaider_chev {
@@ -100,12 +133,33 @@ li+li::before {
     height: 27px;
     cursor: pointer;
     border: none;
-    z-index: 2;
+    z-index: 10;
 }
 
 .slaider .chev_rigth {
     transform: scale(-1, 1);
     margin-left: 964px;
+}
+
+.slaider .iphone_screen {
+    margin-top: -400px;
+    display: block;
+    position: absolute;
+    margin-left: 11px;
+}
+
+.slaider .screen_horizontal {
+    display: block;
+    margin-left: 347px;
+    margin-top: -337px;
+}
+
+.iphone_screen.hidden {
+    display: none;
+}
+
+.iphone_screen:not(.hidden):hover {
+    display: block;
 }
 
 .services {
@@ -151,7 +205,7 @@ li+li::before {
     display: flex;
     justify-content: center;
     align-items: left;
-    
+
 }
 
 .services .services_block .services_round {
@@ -239,17 +293,13 @@ li+li::before {
     padding: 2px 6px;
 }
 
-.portfolio .portfolio_btn:hover {
-    border: 1px solid #c5c5c5;
-    color: #dedede;
-}
 
 .portfolio .images_block {
     padding-top: 3px;
 }
 
 .portfolio .row {
-    max-height: 620px;
+    max-height: 630px;
     overflow: hidden;
     padding-left: 40px;
     padding-right: 20px;
@@ -473,4 +523,61 @@ textarea {
 
 .footer_social_item:hover {
     background-color: white;
+}
+
+#message-block {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #0008;
+}
+
+#message-block.hidden {
+    display: none;
+}
+
+#message {
+    position: absolute;
+    min-width: 1020px;
+    padding: 10px 10px;
+    background-color: #f0f0f0;
+    top: 40%;
+    left: 20%;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#body.hide {
+    overflow: hidden;
+}
+
+span.messages {
+    color: black;
+    font-family: "Lato";
+}
+
+.message-block-btn {
+    width: 40px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+#portfolio_img img.active {
+    outline: #F06C64 5px solid;
+    outline-offset: -5px;
+}
+
+#portfolio_img img:not(.active):hover {
+    cursor: pointer;
+}
+
+#portfolio_nav button.active {
+    border: 1px solid #c5c5c5;
+    color: #dedede;
+}
+
+#portfolio_nav button:not(.active):hover {
+    cursor: pointer;
 }
