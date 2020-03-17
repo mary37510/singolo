@@ -142,16 +142,16 @@ li+li::before {
 }
 
 .slaider .iphone_screen {
-    margin-top: -400px;
+    top: 60px;
     display: block;
     position: absolute;
-    margin-left: 11px;
+    left: 124px;
 }
 
 .slaider .screen_horizontal {
     display: block;
-    margin-left: 347px;
-    margin-top: -337px;
+    left: 460px;
+    top: 125px;
 }
 
 .iphone_screen.hidden {

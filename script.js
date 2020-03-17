@@ -3,9 +3,10 @@ const BUTTON = document.getElementById("btn");
 const CLOSE_BUTTON = document.getElementById("close-btn");
 const PORTFOLIO_IMG = document.getElementById("portfolio_img");
 const PORTFOLIO_BTN = document.getElementById("portfolio_nav");
-const LIST = document.getElementById("something");
+const LIST = document.getElementById("works");
 const SLIDER = document.getElementById("slaider");
-const PHONE = document.getElementById("phone");
+const RIGHT_PHONE = document.getElementById("right_phone");
+const LEFT_PHONE = document.getElementById("left_phone");
 
 
 MENU.addEventListener('click', (event) => {
@@ -134,7 +135,12 @@ function showSlides(n) {
 
 }
 
-PHONE.addEventListener('click', (event) => {
-    PHONE.querySelectorAll('.iphone_screen').forEach(element => element.classList.remove('hidden'));
+RIGHT_PHONE.addEventListener('click', (event) => {
+    RIGHT_PHONE.querySelectorAll('.iphone_screen').forEach(element => element.classList.remove('hidden'));
     event.target.classList.add('hidden');
-}); 
+});
+
+LEFT_PHONE.addEventListener('click', (event) => {
+    LEFT_PHONE.querySelectorAll('.iphone_screen').forEach(element => element.classList.remove('hidden'));
+    event.target.classList.add('hidden');
+});
