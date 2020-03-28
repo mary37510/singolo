@@ -11,6 +11,7 @@
 
 <body id="body">
     <header class="header" id="home">
+        <div class="burger"> </div>
         <nav>
             <div class="container">
                 <a href="#" class="header__logo">
@@ -35,13 +36,13 @@
                         <span id="left_phone">
                         <img src="assets/iPhone_Vertical.png" alt="vertical iPhone" class="slaider_img" id="vertical_phone">
                         <img src="assets/Screen_Vertical.png" alt="Screen Vertical"
-                            class="iphone_screen hidden screen_vertical">
+                            class="iphone_screen hidden screen_vertical" id="vertical_screen">
                         </span>   
                         <span id="right_phone">
                         <img src="assets/iPhone_Horizontal.png" alt="horizontal iPhone" class="slaider_img"
                             id="horizontal_phone">
                         <img src="assets/Screen_Horizontal.png" alt="Screen Horizontal"
-                            class="iphone_screen hidden screen_horizontal">
+                            class="iphone_screen hidden screen_horizontal" id="horizontal_screen">
                         </span>     
                     </div>
                     <div class="iPhone_shadow">
@@ -49,12 +50,12 @@
                         <img src="assets/Horizontal_Shadow.png" alt="shadow" class="horizontal_shadow">
                     </div>
                 </div>
-                <div class="slaider_item second">
+                <div class="slaider_item second" id="second_slaid">
                     <img src="assets/telefon.svg" class="slaider_img">
                 </div>
             </div>
-            <button class="slaider_chev chev_left" onclick="plusSlides(-1)"></button>
-            <button class="slaider_chev chev_rigth" onclick="plusSlides(1)"></button>
+            <button class="slaider_chev chev_left" id="left_chev" onclick="plusSlides(-1)"></button>
+            <button class="slaider_chev chev_rigth" id="right_chev" onclick="plusSlides(1)"></button>
         </div>
     </section>
     <section class="services" id="Our-services">
@@ -311,11 +312,11 @@
                 </div>
                 <div class="contact_info">
                     <h3 class="contact_tittle">Contact Information</h3>
-                    <p class="contact_subtittle">Quisque hendrerit purus dapibus, ornare nibh vitae, viver-<br>ra nibh.
+                    <p class="contact_subtittle">Quisque hendrerit purus dapibus, ornare nibh vitae, viver ra nibh.
                         Fusce
-                        vitae aliquam tellus. Proin sit amet volutpat<br>libero. Nulla sed nunc et tortor luctus
+                        vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
                         faucibus.
-                        Morbi at<br>aliquet turpis, et consequat felis.</p>
+                        Morbi at aliquet turpis, et consequat felis.</p>
                     <div class="contact_link">
                         <img src="assets/location.png" alt="location" class="contact_icons"> <a>Elm St. 14/05 Lost
                             City</a> <br>
