@@ -45,7 +45,7 @@ textarea:focus {
     display: flex;
     justify-content: space-between;
     width: 371px;
-    margin-left: 610px;
+    margin-left: 572px;
     line-height: 6.32px;
     margin-top: -18px;
 }
@@ -722,7 +722,7 @@ span.messages {
 
     .slaider #second_slaid .slaider_img {
         height: 177.61px;
-        margin-left: -80px;
+        margin-left: -153px;
     }
 
     .slaider #right_chev {
